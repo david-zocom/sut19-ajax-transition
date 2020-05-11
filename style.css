@@ -19,9 +19,38 @@ h1 {
     padding: 0.5em;
     background-color: cornsilk;
 }
+input, button { margin: 2px; }
 button {
     width: 11em;
     border-radius: 2px;
     padding: 0.3em;
+    transition: border-radius 1s;
+    background-color:
 }
-input, button { margin: 2px; }
+button:hover {
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button.primary {
+    background-color: blue;
+    border-color: blue;
+    color: white;
+}
+button.ghost {
+    border-color: blue;
+    background-color: white;
+}
+
+.flash-error {
+    animation: flash-error 2s;
+}
+/* .status:hover {
+    animation: flash-error 2s;
+} */
+
+@keyframes flash-error {
+    0%   { background-color: #FBF5EF; }
+    50%  { background-color: pink; }
+    100% { background-color: #FBF5EF; }
+}
