@@ -11,8 +11,12 @@ h1 {
     background-color: azure;
     padding: 10px;
 }
-#svar {
-    padding: 10px;
+.status {
+    padding: 0.5em;
+    background-color: #FBF5EF;
+}
+.answer {
+    padding: 0.5em;
     background-color: cornsilk;
 }
 button {
